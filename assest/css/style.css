@@ -1,4 +1,6 @@
-* {
+* ,
+::before, 
+::after {
     box-sizing: border-box;
 }
 html{
@@ -7,4 +9,14 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'DM Sans', sans-serif;
+}
+div{
+    padding: 0;
+}
+.inner{
+    margin-top: 15px;
+    font-size: 2rem;
+    text-align: center;
+    background: #ccc;
+    padding: 30px;
 }
