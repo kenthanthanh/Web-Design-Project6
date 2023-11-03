@@ -207,3 +207,61 @@ line-height: 1.87; /* 187.5% */
 .contact__item:hover{
     opacity: 0.8;
 }
+/* Client */
+.client{
+    padding: 100px 0 140px;
+}
+.client-recent{
+    display: flex;
+    align-items: center;
+
+}
+.client-recent__heading{
+    width: 253px;
+    position: relative;
+    color: #080415;
+font-size: 4.2rem;
+font-weight: 500;
+line-height: 1.19; /* 119.048% */
+letter-spacing: -1.68px;
+}
+.client-recent__heading::before{
+    top: 12px;
+    left: -99px;
+    position: absolute;
+    content: "";
+    width: 86px;
+height: 2px;
+flex-shrink: 0;
+background:#5D3BEE;
+}
+.client-recent__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 34px;
+}
+.client-recent__item{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.client-recent__img{
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+}
+
+.client-item__name{
+    font-size: 1.8rem;
+font-weight: 500;
+line-height: 1.19;
+    color: #080415;
+
+
+}
