@@ -424,3 +424,103 @@ background: #5D3BEE;
     background: #fff;
     color: #080415;
 }
+/* Rating  */
+.rating {
+    padding-top: 140px;
+}
+.rating-head {
+    text-align: center;
+}
+.rating-cta {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    justify-content: center;
+}
+.rating-cta__title {
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
+}
+.rating__heading {
+    margin-top: 10px;
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.17; /* 117.857% */
+    letter-spacing: -2.24px;
+}
+.rating__desc {
+    margin: 0 auto;
+    width: 570px;
+    margin-top: 15px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+.rating-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 95px;
+    margin: 70px 112px;
+    border-top: 1px solid rgba(8, 4, 21, 0.2);
+    border-bottom: 1px solid rgba(8, 4, 21, 0.2);
+}
+.rating-item__number {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.35; /* 135.714% */
+    letter-spacing: 1.68px;
+    text-decoration-line: underline;
+}
+.rating-item__title {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+.rating-media__video {
+    /* position: relative; */
+}
+.rating-media {
+    position: relative;
+}
+.rating-media__play {
+    bottom: 50%;
+    left: 50%;
+    translate: -50% 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 111px;
+    height: 111px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 50%;
+}
+.rating-media__play:hover{
+    cursor: pointer;
+  box-shadow: 0px 3px 68px 0px rgba(0, 0, 0, 0.75);
+}
+.rating-media__video {
+    width: 100%;
+    object-fit: cover;
+}
+.rating-media__btn {
+    background: #fff;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67; /* 166.667% */
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
