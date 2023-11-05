@@ -499,39 +499,87 @@
         <section class="question">
             <div class="container">
                 <div class="question__inner">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-0 col-12">
-                            <div class="inner">Question head</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="inner">Question 1</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="inner">Question 2</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="inner">Question 3</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="inner">Question 4</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="inner">Question 5</div>
-                        </div>
-                    </div>
+                    <h2 class="question__heading">A few questions
+                        clients normally ask me</h2>
+                    <ul class="row question-list">
+                        <li class="col question-item">
+                            <label for="question1" class="question-item__label">
+                                <input onclick="myFunction()" type="checkbox" id="question1" name=""
+                                    class="question-item__input">
+                                <span class="question-item__checkmark">
+                                </span>
+                                <div class="question-item__content">
+                                    <h3 class="question-item__heading">What is your hourly rate?</h3>
+                                    <p class="question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                            </label>
+
+                        </li>
+                        <li class="col question-item">
+                            <label for="question2" class="question-item__label">
+                                <input onclick="myFunction()" type="checkbox" id="question2" name=""
+                                    class="question-item__input">
+                                <span class="question-item__checkmark">
+                                </span>
+                                <div class="question-item__content">
+                                    <h3 class="question-item__heading">What type of projects do you take on?</h3>
+                                    <p class="question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                            </label>
+
+                        </li>
+                        <li class="col question-item">
+                            <label for="question3" class="question-item__label">
+                                <input onclick="myFunction()" type="checkbox" id="question3" name=""
+                                    class="question-item__input">
+                                <span class="question-item__checkmark">
+                                </span>
+                                <div class="question-item__content">
+                                    <h3 class="question-item__heading">How do you charge for projects ?</h3>
+                                    <p class="question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                            </label>
+
+                        </li>
+                        <li class="col question-item">
+                            <label for="question4" class="question-item__label">
+                                <input onclick="myFunction()" type="checkbox" id="question4" name=""
+                                    class="question-item__input">
+                                <span class="question-item__checkmark">
+                                </span>
+                                <div class="question-item__content">
+                                    <h3 class="question-item__heading">What time-zone do you work in?</h3>
+                                    <p class="question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                            </label>
+
+                        </li>
+                        <li class="col question-item">
+                            <label for="question5" class="question-item__label">
+                                <input onclick="myFunction()" type="checkbox" id="question5" name=""
+                                    class="question-item__input">
+                                <span class="question-item__checkmark">
+                                </span>
+                                <div class="question-item__content">
+                                    <h3 class="question-item__heading">How often can we communicate?</h3>
+                                    <p class="question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                            </label>
+
+                        </li>
+
+                    </ul>
+
+
                 </div>
             </div>
         </section>
+
         <!-- atmosphere -->
         <section class="mood">
             <div class="container">
@@ -589,8 +637,36 @@
             </div>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+            var checkBoxs = document.querySelectorAll("input[type='checkbox']");
+            var answers = document.querySelectorAll(".question__answer");
+            var list_items = document.querySelectorAll(".question-item");
+            var headings = document.querySelectorAll(".question-item__heading");
+            // console.log(answers);
 
+            // console.log(checkBoxs);
+            for (var i = 0; i < checkBoxs.length; i++) {
+                var checkBox = checkBoxs[i];
+                var answer = answers[i];
+                var item = list_items[i];
+                var heading = headings[i];
+                if (checkBox.checked == true) {
+                    answer.style.display = "block";
+                    item.style.borderBottom = "2px solid #5D3BEE";
+                    heading.style.color = " #5D3BEE";
 
+                    // console.log("Bat dươc checkbox");
+                } else {
+                    // console.log(" Khong Bat dươc checkbox");
+                    answer.style.display = "none";
+                    item.style.borderBottom = "2px solid #08182f";
+                    heading.style.color = "#080415";
+                }
+            }
+
+        }
+    </script>
 </body>
 
 </html>
