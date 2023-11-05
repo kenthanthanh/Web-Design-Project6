@@ -791,3 +791,53 @@ height: 529px;
 flex-shrink: 0;
 object-fit: cover;
 }
+
+/* Book-call */
+.book-call__inner{
+    margin:  0 135px;
+    padding: 68px 0;
+    position: relative;
+    background: #FBFAFF;
+}
+.book-call__inner::before{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: url(../img/book-call__decor--left.svg);
+}
+.book-call__inner::after{
+    top: 0;
+    right: 0;
+    position: absolute;
+    content: url(../img/book-call__decor--right.svg);
+}
+.book-call__body{
+    position: relative;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.book-call__body::after{
+    position: absolute;
+    content: url(../img/book-call__decor--center.svg);
+}
+.book-call__heading{
+    color: #080415;
+font-size: 5.6rem;
+font-weight: 500;
+line-height: 1.18; /* 117.857% */
+letter-spacing: -2.24px;
+}
+.book-call__desc{
+    width: 570px;
+    color: #51586A;
+font-size: 1.8rem;
+font-weight: 400;
+line-height: 1.67; /* 166.667% */
+}
+.book-call__btn{
+    margin-top: 10px;
+}
