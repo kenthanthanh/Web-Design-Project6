@@ -683,14 +683,13 @@ a:hover {
 }
 .menu-mobile__input,
 .question-item__input {
-    --height: 50px;
-    --width:50px;
+    --size: 50px;
     opacity: 0;
     right: 0;
     position: absolute;
     cursor: pointer;
-    height: var(--height);
-    width: var(--width);
+    height: var(--size);
+    width: var(--size);
 }
 .menu-mobile__label:hover .menu-mobile__input ~ .menu-mobile__checkmark,
 .question-item__label:hover .question-item__input ~ .question-item__checkmark {
@@ -698,12 +697,11 @@ a:hover {
 }
 .menu-mobile__checmark,
 .question-item__checkmark {
-    --height: 50px;
-    --width: 50px;
+    --size: 50px;
     right: 0;
     position: absolute;
-    height: var(--height);
-    width: var(--width);
+    height: var(--size);
+    width: var(--size);
     background-color: #fff;
     border: 1px solid rgba(93, 59, 238, 0.2);
     border-radius: 50%;

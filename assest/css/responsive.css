@@ -316,5 +316,36 @@ height: 44px;
 .comment-dots{
     margin-top: 20px;
 }
+/*  Question*/
+.question {
+    padding: 120px 0 0;
+}
+.question__heading{
+    width: 316px;
+}
+.question-list{
+    margin: 0;
+    padding: 42px 0 0;
+}
+.question-item{
+    padding: 40px 0 15px 11px;
+    width: 100%;
+}
+.question-item__content{
+    width: calc(100% - 40px);
+}
+.question__answer{
+    text-align: left;
+    margin-top: 15px;
+    width: 100%;
+    line-height: 1.62; /* 162.5% */
+}
+.question-item__label{
+    align-items: start;
+}
+.question-item__checkmark,
+.question-item__input{
 
+    --size: 33px;
+}
 }
