@@ -1,0 +1,138 @@
+/* PC */
+@media screen and (min-width: 992px){
+
+}
+@media screen and (max-width: 991.8px){
+
+    /* Common */
+    .section-heading{
+        font-size: 2.8rem;
+        line-height: 1.21; /* 121.429% */
+        letter-spacing: -1.12px;
+
+    }
+    .section-desc{
+        font-size: 1.6rem;
+        line-height: 1.75; /* 175% */
+    }
+    .btn{
+        --height: 55px;
+        --width: 147px;
+        font-size: 1.6rem;
+
+    }
+
+.container{
+    max-width:calc(100% - 40px);
+}
+.contact__link{
+    display: none;
+}
+.header__nav{
+    display: none;
+}
+.nav__list{
+    display: none;
+}
+.header__menu--mobile{
+    width: 32px;
+height: 32px;
+
+    display: inline-block;
+}
+.header__inner{
+    padding: 26px 20px 21px;
+    padding: 0;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+}
+.media__img{
+    width: 16.696px;
+height: 11.13px;
+flex-shrink: 0;
+object-fit: cover;
+}
+.header__img{
+    transform: translateX(0);
+    margin: 0;
+    width: inherit;
+    height: inherit;
+}
+.header__direct{
+
+}
+.menu-mobile__input{
+    --height: 32px;
+    --width:32px;
+    opacity: 1;
+    border-radius: 50%;
+    border: 1px solid rgba(93, 59, 238, 0.2);
+
+}
+.footer__img--avt{
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+}
+.contact__media{
+    width: 32px;
+height: 32px;
+flex-shrink: 0;
+}
+.hero{
+    padding: 0;
+}
+.hero__body{
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+.hero__content{
+    padding: 0;
+}
+.hero__heading{
+    width: 260px;
+    font-size: 4.2rem;
+    line-height: 1.19; /* 119.048% */
+    letter-spacing: -1.68px;
+}
+.hero__action{
+    margin-top: 30px;
+    gap: 40px;
+}
+.hero__link{
+    font-size: 1.6rem;
+    line-height: 1.87; /* 187.5% */
+
+}
+.hero__contact{
+    margin-top: 25px;
+    gap: 10px;
+}
+.contact__title{
+    font-size: 1.4rem;
+    line-height: 1.42; /* 142.857% */
+
+}
+.contact__item{
+    height: 31px;
+    width: 31px;
+}
+.hero__img-wrap {
+    margin: 0 auto;
+    width: 259px;
+    height: 355px;
+}
+.hero__img{
+  
+}
+.hero::after{
+    display: none;
+}
+.hero__media::before{
+    bottom: -3px;
+    left: -15px;
+    content: url(../img/hero__decor--mobile.svg);
+}
+
+
+}

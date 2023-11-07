@@ -34,10 +34,10 @@ body {
 }
 .btn {
     --height: 62px;
-
+--width: 170px;
     display: inline-block;
     text-align: center;
-    width: 170px;
+    width: var(--width);
     height: var(--height);
     line-height: var(--height);
     flex-shrink: 0;
@@ -76,6 +76,14 @@ a:hover {
 .header {
     background: #fbfaff;
     padding: 20px 0;
+}
+.header__direct{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header__menu--mobile{
+    display: none;
 }
 .header__inner,
 .footer__body {
@@ -158,7 +166,7 @@ a:hover {
 }
 .hero__media::before{
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     right: -80px;
     content: url(../img/hero__decor--left.svg);
 }
@@ -689,7 +697,7 @@ a:hover {
     font-weight: 400;
     line-height: 1.67;
 }
-
+.menu-mobile__label,
 .question-item__label {
     position: relative;
     cursor: pointer;
@@ -697,27 +705,35 @@ a:hover {
     align-items: center;
     justify-content: space-between;
 }
+.menu-mobile__input,
 .question-item__input {
+    --height: 50px;
+    --width:50px;
     opacity: 0;
     right: 0;
     position: absolute;
     cursor: pointer;
-    height: 50px;
-    width: 50px;
+    height: var(--height);
+    width: var(--width);
 }
+.menu-mobile__label:hover .menu-mobile__input ~ .menu-mobile__checkmark,
 .question-item__label:hover .question-item__input ~ .question-item__checkmark {
     background-color: rgba(93, 59, 238, 0.2);
 }
+.menu-mobile__checmark,
 .question-item__checkmark {
+    --height: 50px;
+    --width: 50px;
     right: 0;
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: var(--height);
+    width: var(--width);
     background-color: #fff;
     border: 1px solid rgba(93, 59, 238, 0.2);
     border-radius: 50%;
 }
-.question-item__checkmark:after {
+.menu-mobile__checkmark::after
+.question-item__checkmark::after {
     content: url(../img/question__open.svg);
     position: absolute;
     display: flex;
