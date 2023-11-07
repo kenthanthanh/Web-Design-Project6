@@ -776,6 +776,9 @@ a:hover {
     flex-shrink: 0;
     object-fit: cover;
 }
+.mood-dots{
+    display: none;
+}
 
 /* Book-call */
 .book-call__inner {
