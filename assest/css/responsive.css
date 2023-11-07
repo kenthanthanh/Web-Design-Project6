@@ -242,4 +242,47 @@ line-height: 1.42; /* 142.857% */
 .special__btn{
     margin-top: 50px;
 }
+/* Rating */
+.rating{
+    padding-top: 120px;
+}
+.rating-cta__title{
+    font-size: 2.0rem;
+    line-height: 2; /* 200% */
+    letter-spacing: -0.8px;
+}
+.rating__desc {
+    width: 100%;
+    text-align: center;
+margin-top: 20px;
+}
+.rating-list {
+    flex-wrap: nowrap;
+    padding: 30px 16px;
+margin: 50px 0 40px;
+justify-content: space-between;
+}
+.rating-item__number{
+    font-size: 3rem;
+    line-height: 1.4; /* 140% */
+    letter-spacing: 0.9px;
+}
+.rating-item__title {
+    margin-top: 5px;
+    font-size: 1.6rem;
+    line-height: 1.37; /* 137.5% */
+}
+.rating-media__video{
+    height: 276px;
+}
+.rating-media__play{
+    --size:77px;
+}
+.rating-media__btn {
+    width: 118px;
+height: 44px;
+    font-size: 1.2rem;
+    line-height: 2.5; /* 250% */
+}
+
 }
