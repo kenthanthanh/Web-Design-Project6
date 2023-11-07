@@ -50,7 +50,7 @@ body {
     opacity: 0.8;
     cursor: pointer;
 }
-.section-heading {
+.heading,.heading1, .heading2{
     color: #080415;
     font-family: DM Sans;
     font-size: 5.6rem;
@@ -58,7 +58,18 @@ body {
     line-height: 117.85; /* 95% */
     letter-spacing: -2.24px;
 }
-.section-desc {
+.heading{
+    font-size: 8rem;
+    line-height: 0.95; /* 95% */
+    letter-spacing: -3.2px;
+}
+
+.heading2{
+    font-size: 3.2rem;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
+}
+.desc {
     color: #51586a;
     text-align: center;
     font-family: DM Sans;
@@ -190,9 +201,6 @@ a:hover {
 
 .hero__heading {
     width: 500px;
-    font-size: 8rem;
-    line-height: 0.95; /* 95% */
-    letter-spacing: -3.2px;
 }
 .hero__desc {
     text-align: left;
@@ -253,11 +261,6 @@ a:hover {
 .client-recent__heading {
     width: 253px;
     position: relative;
-    color: #080415;
-    font-size: 4.2rem;
-    font-weight: 500;
-    line-height: 1.19; /* 119.048% */
-    letter-spacing: -1.68px;
 }
 .client-recent__heading::before {
     top: 12px;
@@ -319,12 +322,6 @@ a:hover {
 .special__desc {
     margin: 20px auto 0;
     width: 534px;
-    color: #51586a;
-    text-align: center;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.67; /* 166.667% */
 }
 .special-list {
     width: 100%;
@@ -334,7 +331,7 @@ a:hover {
 }
 .special-item {
     padding: 33px 43px;
-    width: 370px;
+    width: 100%;
     height: 306px;
     background: #fbfaff;
 }
@@ -351,18 +348,10 @@ a:hover {
 }
 .special-item__heading {
     margin-top: 22px;
-    color: #080415;
-    font-size: 3.2rem;
-    font-weight: 500;
-    line-height: 1.25; /* 125% */
-    letter-spacing: -1.28px;
 }
 .special-item__desc {
     margin-top: 15px;
-    color: #51586a;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.67; /* 166.667% */
+    text-align: left;
 }
 /* Project */
 .project {
@@ -382,14 +371,11 @@ a:hover {
     letter-spacing: -2.24px;
 }
 .project__desc {
+    text-align: left;
     margin-left: 160px;
     width: 370px;
     opacity: 0.7;
     color: #fff;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.67; /* 166.667% */
 }
 .project-list {
     margin-top: 70px;
@@ -419,10 +405,6 @@ a:hover {
 .project-item__desc {
     width: 220px;
     margin-top: 10px;
-    color: #51586a;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.43; /* 143.75% */
 }
 .project-item__more {
     display: block;
@@ -587,10 +569,6 @@ a:hover {
 .comment__desc {
     width: 570px;
     margin-top: 20px;
-    color: #51586a;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.67; /* 166.667% */
 }
 .comment-list {
     margin-top: 60px;
@@ -732,7 +710,7 @@ a:hover {
     border: 1px solid rgba(93, 59, 238, 0.2);
     border-radius: 50%;
 }
-.menu-mobile__checkmark::after
+.menu-mobile__checkmark::after,
 .question-item__checkmark::after {
     content: url(../img/question__open.svg);
     position: absolute;
@@ -779,11 +757,6 @@ a:hover {
 .mood__desc {
     width: 528px;
     margin-top: 20px;
-    color: #51586a;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.67; /* 166.667% */
 }
 .mood__tag {
     margin-top: 30px;
@@ -849,10 +822,6 @@ a:hover {
 }
 .book-call__desc {
     width: 570px;
-    color: #51586a;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.67; /* 166.667% */
 }
 .book-call__btn {
     margin-top: 10px;
