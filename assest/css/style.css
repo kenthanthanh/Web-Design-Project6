@@ -306,12 +306,6 @@ a:hover {
 .special {
     padding-bottom: 140px;
 }
-.special__head {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-}
 .special__heading {
     text-align: center;
     color: #080415;
@@ -353,6 +347,9 @@ a:hover {
 .special-item__desc {
     margin-top: 15px;
     text-align: left;
+}
+.specials-dots{
+    display: none;
 }
 /* Project */
 .project {

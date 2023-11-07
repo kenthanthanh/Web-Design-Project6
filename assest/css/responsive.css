@@ -152,9 +152,36 @@
     .client-item__name{
         font-size: 1.3rem;
     }
+/* Specials */
+.special{
+    padding-bottom: 120px;
+}
+.special__desc{
+    width: 100%;
+}
+.special-list{
+    margin-top: 50px;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    overflow: hidden;
 
-
-
+}
+.special-item{
+    padding: 29px 50px;
+}
+.special-item__heading{
+    margin-top: 30px;
+}
+.special-item__desc {
+margin-top: 10px;
+}
+.specials-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 30px;
+}
 
 
 }
