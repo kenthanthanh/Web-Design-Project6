@@ -414,9 +414,6 @@ a:hover {
     text-decoration-line: underline;
 }
 
-/* .project-item__media{
-    position: relative;
-} */
 .project-item__media::before {
     bottom: 0;
     right: 0;
