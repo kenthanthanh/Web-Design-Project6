@@ -284,5 +284,37 @@ height: 44px;
     font-size: 1.2rem;
     line-height: 2.5; /* 250% */
 }
+/* Comment */
+.comment{
+    padding: 121px 0 67px;
+}
+.comment::before {
+    content: url(../img/comment__decor1--mobile.svg);
+
+}
+.comment::after {
+    content: url(../img/comment__decor2--mobile.svg);
+
+}
+.comment__desc{
+    width: 100%;
+}
+.comment-list{
+    margin-top: 40px;
+}
+.comment-item__user{
+    margin-top: 48px;
+}
+.comment-item__title {
+    font-size: 1.8rem;
+    width: 100%;
+}
+.user__name{
+    font-size: 2.4rem;
+    line-height: 1.67; /* 166.667% */
+}
+.comment-dots{
+    margin-top: 20px;
+}
 
 }
