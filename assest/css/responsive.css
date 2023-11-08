@@ -1,5 +1,8 @@
 /* PC */
 @media screen and (min-width: 992px) {
+    .menu-mobile__label{
+        display: none;
+}
 }
 @media screen and (max-width: 991.8px) {
     /* Common */
@@ -56,9 +59,15 @@
         margin: 0;
     }
     .menu-mobile__checkmark{
+        display: inline-block;
         --size:32px;
+
     }
     .menu-mobile__checkmark::after {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         content: url(../img/menu__icon--mobile.svg);
         height: 100%;
         width: 100%;
