@@ -807,6 +807,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 .book-call__body::after {
     position: absolute;

@@ -377,4 +377,39 @@ height: 503px;
     column-gap: 15px;
     margin-top: 40px;
 }
+/* Book-call */
+.book-call__inner{
+margin: 0;
+padding: 36px 0;
+}
+.book-call__inner::before{
+    content: " ";
+}
+.book-call__body::after{
+    content: "";
+}
+.book-call__body {
+    gap: 10px;
+}
+.book-call__inner::after {
+    position: absolute;
+    bottom: 0;
+    content: url(../img/book-call__decor--mobile.svg);
+}
+.book-call__heading{
+    width: 225px;
+}
+.book-call__icon{
+    --size: 48px;
+    height: var(--size);
+    width: var(--size);
+}
+.book-call__desc{
+    padding: 0 22px;
+    margin-top: 10px;
+    width: 100%;
+}
+.book-call__btn{
+    margin-top: 20px;
+}
 }
