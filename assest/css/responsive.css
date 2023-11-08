@@ -26,20 +26,44 @@
     .container {
         max-width: calc(100% - 40px);
     }
+    /* Header */
+    .header {
+        padding: 20px 13px 15px;
+        margin: 0 7px;
+        border-bottom: 1px solid rgba(12, 7, 32, 0.2);
+    }
     .contact__link {
         display: none;
     }
     .header__nav {
         display: none;
     }
-    .nav__list {
-        display: none;
+    .nav__list{
+        flex-direction:column ;
     }
-    .header__menu--mobile {
-        width: 32px;
-        height: 32px;
-
-        display: inline-block;
+    .header__direct {
+        gap: 0;
+        justify-content: space-between;
+    }
+    .menu-mobile__label {
+        margin-left: 10px;
+        justify-content: center;
+        display: inline-flex;
+    }
+    .menu-mobile__input {
+        --size: 32px;
+        position: relative;
+        margin: 0;
+    }
+    .menu-mobile__checkmark{
+        --size:32px;
+    }
+    .menu-mobile__checkmark::after {
+        content: url(../img/menu__icon--mobile.svg);
+        height: 100%;
+        width: 100%;
+        left: 0;
+        bottom: 0;
     }
     .header__inner {
         padding: 26px 20px 21px;
@@ -59,15 +83,6 @@
         width: inherit;
         height: inherit;
     }
-    .header__direct {
-    }
-    .menu-mobile__input {
-        --height: 32px;
-        --width: 32px;
-        opacity: 1;
-        border-radius: 50%;
-        border: 1px solid rgba(93, 59, 238, 0.2);
-    }
     .footer__img--avt {
         width: 44px;
         height: 44px;
@@ -78,8 +93,9 @@
         height: 32px;
         flex-shrink: 0;
     }
+    /* Hero */
     .hero {
-        padding: 0;
+        padding: 50px 0 0;
     }
     .hero__body {
         flex-direction: column-reverse;
@@ -435,25 +451,24 @@
     }
 
     /* Copy right */
-    .footer__copyright{
-        padding:0;
+    .footer__copyright {
+        padding: 0;
         margin-top: 64px;
         border-top: 0;
         flex-direction: column-reverse;
     }
-    .br{
+    .br {
         margin-top: 29px;
         display: block;
     }
-    .copyright__author{
+    .copyright__author {
         margin-top: 20px;
     }
-    .rule__title + .rule__title::before{
+    .rule__title + .rule__title::before {
         bottom: 8px;
     }
     .copyright__author,
-.rule__title{
-    padding: 0;
-    
-}
+    .rule__title {
+        padding: 0;
+    }
 }

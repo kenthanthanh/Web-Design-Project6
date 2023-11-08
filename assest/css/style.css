@@ -87,13 +87,28 @@ a:hover {
 .header {
     background: #fbfaff;
     padding: 20px 0;
+    position: relative;
+}
+.mobile-header__nav{
+    margin-top: 15px;
+    /* margin-right: -8px; */
+    z-index: 1;
+    height: 50vh;
+    width: 75%;
+    bottom:auto;
+    right: 0;
+    position: absolute;
+    background: rgba(251, 250, 255, 0.95);
+    border: 1px solid rgba(93, 59, 238, 0.2);
+    border-radius: 8px;
+    display: none;
 }
 .header__direct{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.header__menu--mobile{
+.menu-mobile__label{
     display: none;
 }
 .header__inner,
@@ -691,11 +706,11 @@ a:hover {
     height: var(--size);
     width: var(--size);
 }
-.menu-mobile__label:hover .menu-mobile__input ~ .menu-mobile__checkmark,
+.menu-mobile__label:hover .menu-mobile__input,
 .question-item__label:hover .question-item__input ~ .question-item__checkmark {
     background-color: rgba(93, 59, 238, 0.2);
 }
-.menu-mobile__checmark,
+.menu-mobile__checkmark,
 .question-item__checkmark {
     --size: 50px;
     right: 0;
@@ -705,6 +720,7 @@ a:hover {
     background-color: #fff;
     border: 1px solid rgba(93, 59, 238, 0.2);
     border-radius: 50%;
+
 }
 .menu-mobile__checkmark::after,
 .question-item__checkmark::after {

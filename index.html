@@ -24,23 +24,22 @@
     <header class="header">
 
         <div class="header__inner">
-          <div class = "header__direct">
-            
+            <div class="header__direct">
+
                 <div class="header__contact">
                     <div class="contact__media">
-    
+
                         <img src="./assest/img/header__contact__img.png" alt="hi@arif.interactive" class="media__img">
-    
+
                     </div>
-                    <a href="#" class="contact__link">hi@arif.interactive</a>
+                    <a href="mailto:hi@arif.interactive" class="contact__link">hi@arif.interactive</a>
                 </div>
-                <div class="header__menu--mobile">
-                    <label for="menu-mobile" class = "menu-mobile__label">
-                        <input class ="menu-mobile__input"type="button" name="" id="menu-mobile">
-                        <span class="menu-mobile__checkmark"></span>
-                    </label>
-                </div>
-          </div>
+
+                <label for="menu-mobile" class="menu-mobile__label">
+                    <input class="menu-mobile__input" type="checkbox" name="" id="menu-mobile" onclick = mobileMenu()>
+                    <span class="menu-mobile__checkmark"></span>
+                </label>
+            </div>
             <div class="header__img">
                 <img src="./assest/img/header__img--avt.png" alt="" class="footer__img--avt">
 
@@ -62,6 +61,24 @@
                 </ul>
             </nav>
         </div>
+        <nav class="mobile-header__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Journey</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Service</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        
+        
 
     </header>
     <main>
@@ -265,7 +282,8 @@
                     <section class="project-head">
                         <h2 class="heading1 project__heading">Take a look at
                             my recent projects</h2>
-                        <p class="desc project__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+                        <p class="desc project__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+                            non
                             nisl tincidunt ut elementum turpis.</p>
                     </section>
                     <div class="row project-list">
@@ -340,7 +358,8 @@
                             <img src="./assest/img/rating-cta__icon.png" alt="Hey,,,,Its Arif" class="rating-cta__icon">
                         </div>
                         <h2 class="heading1 rating__heading">Interactive Designer</h2>
-                        <p class="desc rating__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+                        <p class="desc rating__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+                            non
                             nisl tincidunt ut elementum turpis.</p>
 
                     </section>
@@ -377,7 +396,8 @@
                 <div class="comment__inner">
                     <section class="comment-head">
                         <h2 class="heading1 comment__heading">What people says</h2>
-                        <p class="desc comment__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+                        <p class="desc comment__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+                            non
                             nisl tincidunt ut elementum turpis.</p>
                     </section>
                     <section class="row comment-list">
@@ -478,7 +498,8 @@
                                 </span>
                                 <div class="question-item__content">
                                     <h3 class="heading2 question-item__heading">What is your hourly rate?</h3>
-                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.
                                         In urna, non nisl tincidunt ut elementum turpis.</p>
                                 </div>
                             </label>
@@ -491,8 +512,10 @@
                                 <span class="question-item__checkmark">
                                 </span>
                                 <div class="question-item__content">
-                                    <h3 class="heading2 question-item__heading">What type of projects do you take on?</h3>
-                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <h3 class="heading2 question-item__heading">What type of projects do you take on?
+                                    </h3>
+                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.
                                         In urna, non nisl tincidunt ut elementum turpis.</p>
                                 </div>
                             </label>
@@ -506,7 +529,8 @@
                                 </span>
                                 <div class="question-item__content">
                                     <h3 class="heading2 question-item__heading">How do you charge for projects ?</h3>
-                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.
                                         In urna, non nisl tincidunt ut elementum turpis.</p>
                                 </div>
                             </label>
@@ -520,7 +544,8 @@
                                 </span>
                                 <div class="question-item__content">
                                     <h3 class="heading2 question-item__heading">What time-zone do you work in?</h3>
-                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.
                                         In urna, non nisl tincidunt ut elementum turpis.</p>
                                 </div>
                             </label>
@@ -534,7 +559,8 @@
                                 </span>
                                 <div class="question-item__content">
                                     <h3 class="heading2 question-item__heading">How often can we communicate?</h3>
-                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <p class="desc question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.
                                         In urna, non nisl tincidunt ut elementum turpis.</p>
                                 </div>
                             </label>
@@ -554,7 +580,8 @@
                 <div class="mood__inner">
                     <section class="mood-head">
                         <h2 class="heading1 mood__heading">My atmosphere</h2>
-                        <p class="desc mood__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
+                        <p class="desc mood__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+                            nisl
                             tincidunt ut elementum turpis.</p>
                         <a class="mood__tag">@interaction_arif</a>
                     </section>
@@ -581,7 +608,8 @@
                 <div class="book-call__body">
                     <img src="./assest/img/book-call__icon.png" alt="" class="book-call__icon">
                     <h2 class="heading1 book-call__heading">Got a project? Let’s talk</h2>
-                    <p class="desc book-call__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+                    <p class="desc book-call__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+                        non
                         nisl tincidunt ut elementum turpis.</p>
                     <a href="#" class="btn book-call__btn">Book a Call</a>
                 </div>
@@ -633,14 +661,32 @@
         </div>
     </footer>
     <script>
+        function mobileMenu()
+        {
+            var menuClick = document.querySelector("#menu-mobile");
+            var menuMobile = document.querySelector(".mobile-header__nav");
+            
+           if(menuClick.checked)
+           {
+            
+            // console.log(menuClick.checked);
+            menuMobile.style.display= "block";
+           }
+           else{
+            menuMobile.style.display= "none";
+
+           }
+
+
+        }
         function myFunction() {
-            var checkBoxs = document.querySelectorAll("input[type='checkbox']");
+            var checkBoxs = document.querySelectorAll(".question-item__label > input[type='checkbox']");
             var answers = document.querySelectorAll(".question__answer");
             var list_items = document.querySelectorAll(".question-item");
             var headings = document.querySelectorAll(".question-item__heading");
             // console.log(answers);
 
-            // console.log(checkBoxs);
+            console.log(checkBoxs);
             for (var i = 0; i < checkBoxs.length; i++) {
                 var checkBox = checkBoxs[i];
                 var answer = answers[i];
